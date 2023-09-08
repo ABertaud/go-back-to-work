@@ -85,3 +85,37 @@ h1 {
     overflow: hidden;
     transform: rotate(90deg);
 }
+
+#url-list {
+    margin-top: 4vh;
+    display: inline-block;
+}
+
+.url-item {
+    width: 25vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 1px solid var(--border-color, #dcdcde);
+    border-radius: 4px;
+    background: var(--white, #fff);
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.url-item:first-child {
+    margin-top: 0;
+}
+
+.delete {
+    width: 2vw;
+    padding-right: 1vw;
+    cursor: pointer;
+}
+
+.item {
+    padding-left: 1vw;
+    font-size: 14px;
+    font-weight: 500;
+}
