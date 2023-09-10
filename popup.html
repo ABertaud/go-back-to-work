@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GO BACK TO WORK Extension</title>
+    <title>GO BACK TO WORK</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="base.css">
 </head>
-<body>
-    <p id="url-display"></p>
+<body id="popup">
+    <header>
+        <div class="logo">
+            <img src="public/android-chrome-192x192.png" alt="Extension's logo"/>
+            GO BACK TO WORK
+        </div>
+    </header>
+    <div class="round-status"></div>
+    <div class="status">
+        <p>Status:</p>
+
+    </div>
+    <label id="label-url">Current url:</label>
+    <div id="url-display"></div>
     <script src="popup.js"></script>
 </body>
 </html>

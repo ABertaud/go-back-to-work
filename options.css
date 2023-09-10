@@ -1,0 +1,116 @@
+h1 {
+    padding-top: 20vh;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-top: 4vh;
+    font-weight: 300;
+}
+
+#url {
+    background-color:white;
+    width: 250px;
+    border-radius: 0.15rem;
+    border: none;
+    height: 36px;
+    box-shadow : 0px 2px 6px 0px rgba(0,0,0,0.2);
+}
+
+#url:focus {
+    outline: none;
+}
+
+#url-form {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient-bg {
+    min-height: 100vh;
+    background-image: linear-gradient(to top right, #fff1f2 0%, #fff1f2 40%, #fde68a 100%);
+}
+
+
+#add {
+    width: 50px;
+    height: 50px;
+    background: #fde68a;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    margin-left: 1vw;
+}
+
+#plus-line-v {
+    width: 3px;
+    height: 25px;
+    background: #0f172a;
+    border-radius:10px;
+    position: absolute;
+    left: calc(50% - 1.5px);
+    top: calc(50% - 12.5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+#plus-line-h {
+    width: 3px;
+    height: 25px;
+    background: #0f172a;
+    border-radius:10px;
+    position: absolute;
+    left: calc(50% - 1.5px);
+    top: calc(50% - 12.5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    transform: rotate(90deg);
+}
+
+#url-list {
+    margin-top: 4vh;
+    display: inline-block;
+}
+
+.delete {
+    width: 2vw;
+    padding-right: 1vw;
+    cursor: pointer;
+}
+
+.item {
+    padding-left: 1vw;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.url-item {
+    width: 25vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 1px solid var(--border-color, #dcdcde);
+    border-radius: 4px;
+    background: var(--white, #fff);
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.url-item:first-child {
+    margin-top: 0;
+}
+
+.url-item:last-child {
+    margin-bottom: 8vh;
+}

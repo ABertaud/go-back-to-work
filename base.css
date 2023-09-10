@@ -1,0 +1,30 @@
+body {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #0f172a;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2vh;
+}
+  
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    letter-spacing: -2.5px;
+    font-weight: 500;
+}
+  
+.logo img {
+    width: 52px;
+    margin-bottom: 4px; 
+}

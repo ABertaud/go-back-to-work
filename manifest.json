@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "GO BACK TO WORK Extension",
+    "name": "GO BACK TO WORK",
     "version": "1.0",
-    "description": "Travailler tu dois.",
+    "description": "Working you must.",
     "permissions": [
         "activeTab"
     ],
