@@ -1,11 +1,13 @@
-chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+import { getCachedUrls, isValid } from './utils.js';
+
+chrome.tabs.query({ active: true, currentWindow: true }, async function (tabs) {
     var currentTab = tabs[0];
     var url = currentTab.url;
     document.getElementById('url-display').textContent = url;
 
-    var cachedUrls = JSON.parse(localStorage.getItem('urls')) || [];
+    var cachedUrls = await getCachedUrls();
 
-    const valid = !cachedUrls.some((cachedUrl) => url.includes(cachedUrl));
+    const valid = isValid(url, cachedUrls);
     if (valid) {
         document.querySelector('.status p').textContent = 'Status: Valid';
         document.querySelector('.status p').classList.remove('invalid');
