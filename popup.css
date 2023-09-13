@@ -1,28 +1,11 @@
 #popup {
-    background-image: linear-gradient(to top right, #fff1f2 0%, #fff1f2 40%, #fde68a 100%);
-    width: 500px;
+    background-color: #fff1f2;
+    width: 320px;
     font-size: 16px;
 }
 
-.status {
-    text-align: left;
-}
-
-.status p {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.status p.valid {
-    color: #16a34a;
-}
-
-.status p.invalid {
-    color: #dc2626;
-}
-
 .round-status {
-    margin-top: 8vh;
+    margin-top: 16vh;
     text-align: center;
     width: 28px;
     height: 28px;
@@ -32,16 +15,18 @@
 
 .round-valid {
     background-color: #16a34a;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.3);
 }
 
 .round-invalid {
     background-color: #dc2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.3);
 }
 
 #url-display {
-    margin-top: 2vh;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
+    margin-top: 4vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
     text-align: left;
     display: block;
     width: auto;
@@ -53,11 +38,5 @@
     font-weight: 500;
     overflow: hidden;
     margin-bottom: 8vh;
-}
-
-#label-url {
-    text-align: left;
-    display: block;
-    font-weight: 400;
-    color:#64748b;
+    flex-wrap: wrap;
 }

@@ -9,17 +9,11 @@ chrome.tabs.query({ active: true, currentWindow: true }, async function (tabs) {
 
     const valid = isValid(url, cachedUrls);
     if (valid) {
-        document.querySelector('.status p').textContent = 'Status: Valid';
-        document.querySelector('.status p').classList.remove('invalid');
         document.querySelector('.round-status').classList.remove('round-invalid');
-        document.querySelector('.status p').classList.add('valid');
         document.querySelector('.round-status').classList.add('round-valid');
 
     } else {
-        document.querySelector('.status p').textContent = 'Status: Invalid';
-        document.querySelector('.status p').classList.remove('valid');
         document.querySelector('.round-status').classList.remove('round-valid');
-        document.querySelector('.status p').classList.add('invalid');
         document.querySelector('.round-status').classList.add('round-invalid');
     }
 });
